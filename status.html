@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nickstabadet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonas Stjerna">
+    <meta name="description" content="Nynas Camping">
+    <meta name="keywords" content="camping, java17">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles/bs.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+</head>
+<body class="bg-primary pb-5">
+<header>
+        <h1 class="maintext">Nickstabadet</h1>
+        <p class="maintext">
+        En solig sommarbad
+    </p>
+</header>
+<nav class="navbar navbar-expand navbar-light bg-info mb-5">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="index.html" class="nav-link">Hem</a></li>
+      <li class="nav-item "><a href="contact.html" class="nav-link">Kontakt</a></li>
+      <li class="nav-item "><a href="status.html" class="nav-link">Väder</a></li>
+      <li class="nav-item "><a href="index.html" class="nav-link">Tillbaks</a></li>
+    </ul>
+  </nav>
+    <div class="container">
+        
+        <div class="row">
+        
+    <article class="bg-secondary col-10 col-md-6">
+        <header class="card-header"><h2>Vädret på Nicksta</h2></header>
+        <button class="fetch-data">Hämta väder</button>
+            <table class="table table-bordered table-hover table-sm">
+                <thead class="thead-dark">
+                <tr >
+                    <th scope="col">
+                        Klocka
+                    </th>
+                    <th scope="col">
+                        Väder
+                    </th>
+                    <th scope="col">
+                        Värme
+                    </th>
+                    <th scope="col">
+                        Vind
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="insert-weather">
+                    
+                </tbody>
+            </table>
+        </article>
+    <article class="bg-secondary col-8 col-md-4 mt-md-0 mt-4 ml-md-4">
+        <header><h2 class="card-header">Åker tågen?</h2></header>
+        <label> Jag åker ifrån..
+            <input type="text" id="train-input">
+        </label>
+        <button type="submit" id="submit">Skicka..</button>
+        <table class="table table-bordered table-hover table-sm">
+            <caption>Åker från: <span id="train-output"></span></caption>
+            <caption align="bottom">Inga problem i trafiken</caption>
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">
+                    Nr
+                </th>
+                <th scope="col">
+                    Avgår
+                </th>
+                <th scope="col">
+                    Ankommer
+                </th>
+            </tr>
+            </thead>
+            <tbody id="insert-trains">
+                    
+            </tbody>
+        </table>
+        </article>
+        </div>
+        </div>
+    
+<footer class="container-fluid text-center mt-4 border-top">Vill du veta mer skicka e-post till <a href="mailto:vartärdu@outlook.nu">VartärDu@mail.com</a></footer>
+
+    
+    
+    
+    
+<script src="scripts/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

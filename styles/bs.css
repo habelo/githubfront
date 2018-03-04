@@ -1,0 +1,7 @@
+body > header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: darkblue;
+    background-image: url("layout/header-sky.jpg");
+    padding: 20px 0 10px 30px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nickstabadet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonas Stjerna">
+    <meta name="description" content="Nynas Camping">
+    <meta name="keywords" content="camping, java17">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles/bs.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+  </head>
+<body class="bg-primary pb-5">
+<header>
+        <h1 class="maintext">Nickstabadet</h1>
+        <p class="maintext">
+        En solig sommarbad
+    </p>
+</header>
+ <nav class="navbar navbar-expand navbar-light bg-info mb-5 ">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="index.html" class="nav-link">Hem</a></li>
+      <li class="nav-item "><a href="contact.html" class="nav-link">Kontakt</a></li>
+      <li class="nav-item "><a href="status.html" class="nav-link">Väder</a></li>
+      <li class="nav-item "><a href="index.html" class="nav-link">Tillbaks</a></li>
+    </ul>
+  </nav>
+
+    <article class="bg-white col-9 col-7-ld ml-4 p-4 bg-white order-md-2 border border-dark-secondary rounded container">
+        <header><h2 class="text-size-">Lämna synpunkter här</h2></header>
+        <section class="m-2">
+        <form action="#" class="col">
+            <div class="row mb-2">
+                <label for="rub" class="row ml-1">Rubrik</label>
+                <input id="rub" type="text" maxlength="10" required placeholder="Rubrik" class="ml-5">
+            </div>
+            <div class="row mb-2">
+
+                <label for="besk" class="mr-2">Beskrivning</label>
+                <textarea id="besk"></textarea>
+                <small class="mt-5">Max 100 tecken</small>
+            </div>
+            <div class="row mb-2">
+                <label>Ärende</label>
+                <select class="row ml-3">
+                    <option>Strand</option>
+                    <option>Inte strand</option>
+                </select>
+            </div>
+            <div class="col mb-2">
+                <label class="row">Vill du få svar på din synpunkt</label>
+                    <input name="choiceYnN" type="radio" id="ansYES">
+                <label for="ansYES">ja</label>
+                    <input name="choiceYnN" type="radio" id="ansNO" checked>
+                <label for="ansNO">nej</label>
+                <div>
+                    <label for="mail">Email
+                        <input type="text" id="mail" prefix="reda" placeholder="example@gmail.com">
+                    </label>
+                </div>
+                <button type="submit" class="">Skicka...</button>
+
+            </div>
+        </form>
+        </section>
+    </article>
+
+
+
+
+<footer class="container-fluid text-center mt-4 border-top">Vill du veta mer skicka e-post till <a href="mailto:vartärdu@outlook.nu">VartärDu@mail.com</a></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+

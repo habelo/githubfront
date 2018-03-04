@@ -1,0 +1,142 @@
+@import url("reset.css");
+
+body{
+    padding-bottom: 200px;
+    background-color: #e8eaed;
+    font-family: 'Verdana', Arial, Helvetica, sans-serif;
+}
+
+body > header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: darkblue;
+    background-image: url("layout/header-sky.jpg");
+    padding: 20px 0 10px 30px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+nav {
+    width: 100%;
+    background-color: aliceblue;
+    height: 40px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px aqua;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: fantasy;
+}
+
+.visad {
+    background-color: aqua;
+    color: aliceblue;
+}
+
+ul li:last-child{
+    float: right;
+}
+
+
+.sida {
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: -3px -3px aqua;
+    background-color: white;
+    text-align: center;
+    float: right;
+    width: 200px;
+    padding-bottom: 20px;
+    
+}
+
+#galley {
+    align-content: center;
+}
+
+#specpic {
+    height: 120px;
+}
+
+h2 {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+h3 {
+    color: mediumaquamarine;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secondsecs {
+    padding: 15px;
+    padding-bottom: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    box-shadow: -2px -2px aqua;
+    margin-left: 20px;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 60%;
+}
+
+.secs figure {
+    margin-right: 10px;
+    float: left;
+}
+.miscpic {
+    height: 80px;
+    width: 80px;
+}
+
+figcaption {
+    font-style: oblique;
+    font-size: 0.7em;
+}
+
+footer {
+    margin-bottom: 5px;
+    position: fixed;
+    margin-top: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right 0;
+    border-top: solid;
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 650px){  
+    .sida{
+        margin: 0 0 50px 10%;
+        width: 80%;
+        float: none;
+        
+    }
+    #galley {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .secondsecs {
+        margin: 0 0 50px 10%;
+        width: 80%;
+        float: none;
+    }
+    .secondsecs, .sida {
+        padding: 10px;
+    }
+}
+
