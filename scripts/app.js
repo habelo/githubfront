@@ -2,7 +2,7 @@
 
 const KEY = '8d80eaa94bb6744b936899a6e78aa53e'
 
-const API_URL = 'http://api.openweathermap.org/data/2.5/forecast?q=nynashamn&APPID='+KEY;
+const API_URL = 'https://api.openweathermap.org/data/2.5/forecast?q=nynashamn&APPID='+KEY;
 
 function HttpGet(url) {
     this.url = url;
